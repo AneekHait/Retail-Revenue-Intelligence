@@ -1,0 +1,54 @@
+# Retail Revenue Intelligence — project configuration
+project:
+  name: "Retail Revenue Intelligence"
+  version: "1.0.0"
+  description: "End-to-end e-commerce analytics for portfolio demonstration"
+
+data:
+  seed: 42
+  n_customers: 8500
+  n_products: 180
+  start_date: "2023-01-01"
+  end_date: "2025-12-31"
+  raw_path: "data/raw/transactions.csv"
+  customers_path: "data/raw/customers.csv"
+  products_path: "data/raw/products.csv"
+  processed_path: "data/processed/orders_clean.csv"
+  rfm_path: "data/processed/rfm_segments.csv"
+  cohorts_path: "data/processed/cohort_retention.csv"
+
+analysis:
+  # RFM score quintiles (1–5); higher = better
+  rfm_quantiles: 5
+  # Snapshot date for recency (analysis "today")
+  snapshot_date: "2026-01-01"
+  # Minimum line items after cleaning
+  min_quantity: 1
+  min_unit_price: 0.01
+
+viz:
+  style: "whitegrid"
+  dpi: 160
+  figsize_wide: [14, 6]
+  figsize_square: [8, 7]
+  palette:
+    primary: "#1B4F72"
+    accent: "#148F77"
+    warm: "#D35400"
+    alert: "#C0392B"
+    muted: "#7F8C8D"
+    light: "#ECF0F1"
+    segments:
+      Champions: "#148F77"
+      Loyal: "#1ABC9C"
+      "Potential Loyalists": "#3498DB"
+      "New Customers": "#5DADE2"
+      "At Risk": "#E67E22"
+      Hibernating: "#95A5A6"
+      Lost: "#C0392B"
+      "Need Attention": "#F39C12"
+
+output:
+  figures_dir: "reports/figures"
+  insights_path: "reports/insights.md"
+  summary_path: "reports/executive_summary.json"

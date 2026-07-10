@@ -1,0 +1,326 @@
+{
+  "kpis": {
+    "total_revenue": 5937769.98,
+    "total_profit": 2011817.08,
+    "profit_margin_pct": 33.88,
+    "orders": 44990,
+    "customers": 7985,
+    "aov": 131.98,
+    "items_sold": 180446,
+    "repeat_purchase_rate_pct": 88.43,
+    "avg_orders_per_customer": 5.63,
+    "last_month_revenue": 388405.81,
+    "mom_revenue_change_pct": 14.14,
+    "date_start": "2023-01-01",
+    "date_end": "2025-12-31"
+  },
+  "data_quality": {
+    "rows_raw": 116558,
+    "duplicate_rows_removed": 1292,
+    "invalid_line_items_removed": 670,
+    "null_key_rows_removed": 0,
+    "orphan_product_rows": 0,
+    "orphan_customer_rows": 0,
+    "rows_clean": 114596,
+    "orders": 44990,
+    "customers": 7985,
+    "products": 180,
+    "revenue_total": 5937769.9799999995,
+    "profit_total": 2011817.08,
+    "date_min": "2023-01-01",
+    "date_max": "2025-12-31",
+    "rows_removed_pct": 1.683
+  },
+  "cohort": {
+    "avg_m1_retention_pct": 18.2,
+    "avg_m3_retention_pct": 19.3,
+    "avg_m6_retention_pct": 19.8,
+    "largest_cohort": "2023-12",
+    "largest_cohort_size": 397,
+    "recent_6m_avg_cohort_size": 69.2
+  },
+  "top_segment": {
+    "segment": "Champions",
+    "customers": 1630,
+    "revenue": 2845315.12,
+    "avg_recency": 21.3,
+    "avg_frequency": 11.23,
+    "avg_monetary": 1745.59,
+    "avg_aov": 151.74,
+    "revenue_share_pct": 47.92,
+    "customer_share_pct": 20.41
+  },
+  "champions_revenue_share": 47.92,
+  "at_risk_customers": 2377,
+  "top_category": "Electronics",
+  "top_category_revenue_share": 26.69,
+  "top_channel": "Web",
+  "top_region": "North America",
+  "segments": [
+    {
+      "segment": "Champions",
+      "customers": 1630,
+      "revenue": 2845315.12,
+      "avg_recency": 21.3,
+      "avg_frequency": 11.23,
+      "avg_monetary": 1745.59,
+      "avg_aov": 151.74,
+      "revenue_share_pct": 47.92,
+      "customer_share_pct": 20.41
+    },
+    {
+      "segment": "Loyal",
+      "customers": 1612,
+      "revenue": 1444028.2,
+      "avg_recency": 59.5,
+      "avg_frequency": 6.86,
+      "avg_monetary": 895.8,
+      "avg_aov": 127.21,
+      "revenue_share_pct": 24.32,
+      "customer_share_pct": 20.19
+    },
+    {
+      "segment": "At Risk",
+      "customers": 907,
+      "revenue": 823040.2,
+      "avg_recency": 246.2,
+      "avg_frequency": 6.57,
+      "avg_monetary": 907.43,
+      "avg_aov": 138.05,
+      "revenue_share_pct": 13.86,
+      "customer_share_pct": 11.36
+    },
+    {
+      "segment": "Need Attention",
+      "customers": 928,
+      "revenue": 302363.45,
+      "avg_recency": 285.3,
+      "avg_frequency": 3.55,
+      "avg_monetary": 325.82,
+      "avg_aov": 104.94,
+      "revenue_share_pct": 5.09,
+      "customer_share_pct": 11.62
+    },
+    {
+      "segment": "Potential Loyalists",
+      "customers": 790,
+      "revenue": 169863.66,
+      "avg_recency": 74.7,
+      "avg_frequency": 3.08,
+      "avg_monetary": 215.02,
+      "avg_aov": 77.91,
+      "revenue_share_pct": 2.86,
+      "customer_share_pct": 9.89
+    },
+    {
+      "segment": "New Customers",
+      "customers": 648,
+      "revenue": 161715.31,
+      "avg_recency": 24.7,
+      "avg_frequency": 2.42,
+      "avg_monetary": 249.56,
+      "avg_aov": 103.48,
+      "revenue_share_pct": 2.72,
+      "customer_share_pct": 8.12
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 1347,
+      "revenue": 143008.12,
+      "avg_recency": 423.9,
+      "avg_frequency": 1.56,
+      "avg_monetary": 106.17,
+      "avg_aov": 74.93,
+      "revenue_share_pct": 2.41,
+      "customer_share_pct": 16.87
+    },
+    {
+      "segment": "Lost",
+      "customers": 123,
+      "revenue": 48435.92,
+      "avg_recency": 398.5,
+      "avg_frequency": 2.24,
+      "avg_monetary": 393.79,
+      "avg_aov": 241.1,
+      "revenue_share_pct": 0.82,
+      "customer_share_pct": 1.54
+    }
+  ],
+  "categories": [
+    {
+      "category": "Electronics",
+      "revenue": 1584798.83,
+      "profit": 315642.66,
+      "units": 22884,
+      "orders": 10058,
+      "customers": 4119,
+      "margin_pct": 19.92,
+      "revenue_share_pct": 26.69,
+      "cum_share": 0.266901351069177,
+      "abc": "A"
+    },
+    {
+      "category": "Sports & Outdoors",
+      "revenue": 1087273.63,
+      "profit": 398358.41,
+      "units": 22076,
+      "orders": 9808,
+      "customers": 4171,
+      "margin_pct": 36.64,
+      "revenue_share_pct": 18.31,
+      "cum_share": 0.4500127941971912,
+      "abc": "A"
+    },
+    {
+      "category": "Home & Kitchen",
+      "revenue": 875305.53,
+      "profit": 287729.01,
+      "units": 22564,
+      "orders": 9792,
+      "customers": 4064,
+      "margin_pct": 32.87,
+      "revenue_share_pct": 14.74,
+      "cum_share": 0.5974259700103777,
+      "abc": "A"
+    },
+    {
+      "category": "Fashion",
+      "revenue": 712548.48,
+      "profit": 339814.07,
+      "units": 22661,
+      "orders": 9951,
+      "customers": 4117,
+      "margin_pct": 47.69,
+      "revenue_share_pct": 12.0,
+      "cum_share": 0.7174286785019586,
+      "abc": "A"
+    },
+    {
+      "category": "Toys & Games",
+      "revenue": 586458.12,
+      "profit": 237331.25,
+      "units": 22418,
+      "orders": 9817,
+      "customers": 4082,
+      "margin_pct": 40.47,
+      "revenue_share_pct": 9.88,
+      "cum_share": 0.8161960814116954,
+      "abc": "B"
+    },
+    {
+      "category": "Beauty",
+      "revenue": 461224.77,
+      "profit": 240337.12,
+      "units": 21618,
+      "orders": 9671,
+      "customers": 4089,
+      "margin_pct": 52.11,
+      "revenue_share_pct": 7.77,
+      "cum_share": 0.8938725107030842,
+      "abc": "B"
+    },
+    {
+      "category": "Books & Media",
+      "revenue": 378736.12,
+      "profit": 153547.97,
+      "units": 23493,
+      "orders": 10143,
+      "customers": 4078,
+      "margin_pct": 40.54,
+      "revenue_share_pct": 6.38,
+      "cum_share": 0.957656746413744,
+      "abc": "C"
+    },
+    {
+      "category": "Grocery",
+      "revenue": 251424.5,
+      "profit": 39056.59,
+      "units": 22732,
+      "orders": 9940,
+      "customers": 4117,
+      "margin_pct": 15.53,
+      "revenue_share_pct": 4.23,
+      "cum_share": 1.0000000000000002,
+      "abc": "C"
+    }
+  ],
+  "channels": [
+    {
+      "channel": "Web",
+      "revenue": 3110658.05,
+      "profit": 1054882.35,
+      "orders": 23433,
+      "customers": 7091,
+      "aov": 132.75,
+      "margin_pct": 33.91,
+      "revenue_share_pct": 52.39
+    },
+    {
+      "channel": "Mobile App",
+      "revenue": 2051003.52,
+      "profit": 694232.16,
+      "orders": 15653,
+      "customers": 6254,
+      "aov": 131.03,
+      "margin_pct": 33.85,
+      "revenue_share_pct": 34.54
+    },
+    {
+      "channel": "Marketplace",
+      "revenue": 776108.41,
+      "profit": 262702.57,
+      "orders": 5904,
+      "customers": 3789,
+      "aov": 131.45,
+      "margin_pct": 33.85,
+      "revenue_share_pct": 13.07
+    }
+  ],
+  "regions": [
+    {
+      "region": "North America",
+      "revenue": 2254027.28,
+      "profit": 765747.67,
+      "orders": 17375,
+      "customers": 3052,
+      "aov": 129.73,
+      "revenue_share_pct": 37.96
+    },
+    {
+      "region": "Europe",
+      "revenue": 1699383.26,
+      "profit": 578046.55,
+      "orders": 12824,
+      "customers": 2252,
+      "aov": 132.52,
+      "revenue_share_pct": 28.62
+    },
+    {
+      "region": "Asia Pacific",
+      "revenue": 1292861.32,
+      "profit": 432600.16,
+      "orders": 9435,
+      "customers": 1724,
+      "aov": 137.03,
+      "revenue_share_pct": 21.77
+    },
+    {
+      "region": "Latin America",
+      "revenue": 456075.18,
+      "profit": 151988.38,
+      "orders": 3497,
+      "customers": 638,
+      "aov": 130.42,
+      "revenue_share_pct": 7.68
+    },
+    {
+      "region": "Middle East & Africa",
+      "revenue": 235422.94,
+      "profit": 83434.32,
+      "orders": 1859,
+      "customers": 319,
+      "aov": 126.64,
+      "revenue_share_pct": 3.96
+    }
+  ]
+}

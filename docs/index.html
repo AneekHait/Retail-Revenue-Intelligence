@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retail Revenue Intelligence</title>
+  <style>
+    :root {
+      --primary:#1B4F72; --accent:#148F77; --bg:#f7f9fa; --card:#fff;
+      --text:#1c2733; --muted:#5b6b7a; --border:#e3e8ec;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6; }
+    header { background:linear-gradient(135deg,var(--primary),var(--accent)); color:#fff; padding:48px 24px; text-align:center; }
+    header h1 { margin:0 0 8px; font-size:2rem; }
+    header p { margin:0; opacity:.9; }
+    main { max-width:1080px; margin:0 auto; padding:32px 24px 64px; }
+    h2 { color:var(--primary); border-bottom:2px solid var(--border); padding-bottom:8px; margin-top:48px; }
+    .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; margin-top:24px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px; text-align:center;
+      box-shadow:0 1px 3px rgba(0,0,0,.05); }
+    .card .label { font-size:.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+    .card .value { font-size:1.5rem; font-weight:700; color:var(--primary); margin-top:6px; }
+    .figures { display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:24px; margin-top:24px; }
+    figure { margin:0; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+    figure img { width:100%; display:block; }
+    figcaption { padding:12px 16px; font-size:.9rem; color:var(--muted); border-top:1px solid var(--border); }
+    #insights { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px 32px; margin-top:24px; }
+    #insights table { border-collapse:collapse; width:100%; margin:16px 0; }
+    #insights th, #insights td { border:1px solid var(--border); padding:8px 12px; text-align:left; }
+    #insights th { background:#eef3f6; }
+    #insights pre { background:#0f1b24; color:#e6edf3; padding:16px; border-radius:8px; overflow:auto; }
+    footer { text-align:center; color:var(--muted); font-size:.85rem; padding:24px; }
+    a { color:var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Retail Revenue Intelligence</h1>
+    <p>End-to-end e-commerce analytics — executive KPIs, RFM, cohorts &amp; product intelligence</p>
+  </header>
+  <main>
+    <h2>Headline KPIs</h2>
+    <section class="kpis">
+      <div class="card"><div class="label">Total revenue</div><div class="value">$5,937,770</div></div>
+      <div class="card"><div class="label">Total profit</div><div class="value">$2,011,817</div></div>
+      <div class="card"><div class="label">Profit margin</div><div class="value">33.9%</div></div>
+      <div class="card"><div class="label">Orders</div><div class="value">44,990</div></div>
+      <div class="card"><div class="label">Customers</div><div class="value">7,985</div></div>
+      <div class="card"><div class="label">Avg order value</div><div class="value">$131.98</div></div>
+      <div class="card"><div class="label">Repeat purchase rate</div><div class="value">88.4%</div></div>
+      <div class="card"><div class="label">Avg orders / customer</div><div class="value">5.63</div></div>
+    </section>
+
+    <h2>Visual Analysis</h2>
+    <section class="figures">
+      <figure><img src="assets/figures/00_kpi_snapshot.png" alt="KPI snapshot" loading="lazy"><figcaption>KPI snapshot</figcaption></figure>
+      <figure><img src="assets/figures/01_revenue_trend.png" alt="Revenue trend" loading="lazy"><figcaption>Revenue trend</figcaption></figure>
+      <figure><img src="assets/figures/02_rfm_segments.png" alt="RFM segments" loading="lazy"><figcaption>RFM segments</figcaption></figure>
+      <figure><img src="assets/figures/03_rfm_scatter.png" alt="RFM scatter" loading="lazy"><figcaption>RFM scatter</figcaption></figure>
+      <figure><img src="assets/figures/04_cohort_retention.png" alt="Cohort retention" loading="lazy"><figcaption>Cohort retention</figcaption></figure>
+      <figure><img src="assets/figures/05_category_revenue.png" alt="Category revenue" loading="lazy"><figcaption>Category revenue</figcaption></figure>
+      <figure><img src="assets/figures/06_channel_region.png" alt="Channel & region" loading="lazy"><figcaption>Channel & region</figcaption></figure>
+      <figure><img src="assets/figures/07_top_products.png" alt="Top products" loading="lazy"><figcaption>Top products</figcaption></figure>
+      <figure><img src="assets/figures/08_category_month_heatmap.png" alt="Category × month heatmap" loading="lazy"><figcaption>Category × month heatmap</figcaption></figure>
+    </section>
+
+    <h2>Executive Insights</h2>
+    <div id="insights">Loading insights…</div>
+
+    <footer>Built 2026-07-10 · Source: Retail Revenue Intelligence analytics pipeline</footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('assets/insights.md')
+      .then(r => r.ok ? r.text() : Promise.reject(r.status))
+      .then(md => { document.getElementById('insights').innerHTML = marked.parse(md); })
+      .catch(() => { document.getElementById('insights').textContent = 'Insights unavailable.'; });
+  </script>
+</body>
+</html>

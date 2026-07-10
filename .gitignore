@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+dist/
+build/
+.env
+.streamlit/secrets.toml
+
+# Large generated data (regenerate with scripts)
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Optional local artifacts
+.Rhistory
+.idea/
+.vscode/
+.tools/
